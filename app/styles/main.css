@@ -127,3 +127,8 @@ ql-snow.ql-toolbar button:hover,
 .ql-editor.ql-blank::before {
   color: rgba(255,99,71,0.6);
 }
+
+
+.headerName {
+  color:#ECEFF1;
+}
