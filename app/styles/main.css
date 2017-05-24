@@ -1,3 +1,7 @@
+.headerTitle {
+  color: white;
+}
+
 md-sidenav ng-md-icon {
   position: relative;
   top: 5px;
