@@ -136,3 +136,8 @@ ql-snow.ql-toolbar button:hover,
 .headerName {
   color:#ECEFF1;
 }
+
+.skillList {
+  padding-left: 15px;
+  padding-right: 15px;
+}
