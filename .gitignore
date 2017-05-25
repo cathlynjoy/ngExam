@@ -3,4 +3,8 @@ node_modules
 .sass-cache
 bower_components
 .idea
+<<<<<<< HEAD
 Grundfile.js
+=======
+Gruntfile.js
+>>>>>>> d5f7156de64d99163b68a05bf589f2caec1976e3
