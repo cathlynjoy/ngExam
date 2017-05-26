@@ -52,8 +52,17 @@ angular
                 url: '/clerical',
                 views: {
                     'menuContent': {
-                        templateUrl: 'views/clerical/main.html',
-                        controller: 'ClericalCtrl'
+                        templateUrl: 'views/nonvoice/clerical.html',
+                        controller: 'NonvoiceCtrl'
+                    }
+                }
+            })
+            .state('app.aptitude', {
+                url: '/aptitude',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'views/nonvoice/aptitude.html',
+                        controller: 'NonvoiceCtrl'
                     }
                 }
             })
@@ -79,6 +88,10 @@ function AppCtrl($scope, $location, $mdSidenav, $mdToast) {
 
     $scope.goClerical = function () {
         $location.path('/app/clerical');
+    };
+
+    $scope.goAptitude = function () {
+        $location.path('/app/aptitude');
     };
 
     $scope.goWriter = function () {

@@ -1,11 +1,14 @@
 <h1>{{exam.title}}</h1>
 <p>{{exam.desc}}</p>
+<ul ng-repeat="topic in exam.topics">
+  <li>{{topic}}</li>
+</ul>
 <span>Time Limit: {{exam.time}}</span>
 <center>
   <div class="test-container">
     <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="600" height="450">
               <param name="movie" value=""/>
-              <param name="FlashVars" value="test=absrea"/>
+              <param name="FlashVars" value="test={{exam.code}}"/>
               <param name="quality" value="high"/>
               <param name="bgcolor" value="#F5F5F5"/>
               <param name="wmode" value="opaque"/>
@@ -16,7 +19,7 @@
               <!--if !IE-->
               <object type="application/x-shockwave-flash" data="{{exam.url}}" width="600" height="450">
                 <!-- <![endif]-->
-                <param name="FlashVars" value="test=absrea"/>
+                <param name="FlashVars" value="test={{exam.code}}"/>
                 <param name="quality" value="high"/>
                 <param name="bgcolor" value="#F5F5F5"/>
                 <param name="wmode" value="opaque"/>
