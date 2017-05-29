@@ -354,11 +354,16 @@
                         </ul>
                       </section>
 
-                      <!-- NOTE: Skills section -->
-                      <section class="pv-profile-section artdeco-container-card pv-featured-skills-section ember-view">
+
+                      <!-- NOTE: Skills section  artdeco-container-card-->
+                      <section class="pv-profile-section pv-featured-skills-section ember-view">
+                        <div flex="100">
+                        <header class="pv-profile-section__card-header">
+                          <h2 class="pv-profile-section__card-heading Sans-17px-black-85%">Featured Skills &amp; Endorsements</h2>
                         <a ng-click="addSkills($event)"data-control-name="edit_skills_add" class="pv-skills-section__add-label button-tertiary-medium-muted ember-view">Add a new skill</a>
-                        <h2 class="pv-profile-section__card-heading Sans-17px-black-85%">Featured Skills &amp; Endorsements</h2>
-                        <div tabindex="-1">
+                        </div>
+
+                        <div tabindex="-1" class="skillList">
                           <ul class="pv-featured-skills-list pv-featured-skills-list--no-highlights section-info no-highlights">
                             <li ng-repeat="skill in skills" class="pv-skill-entity--featured pb5 pv-skill-entity relative ember-view">
                               <div class="pv-skill-entity__header">
@@ -401,6 +406,7 @@
                         </div>
                       </section>
                     </section>
+
                   </span>
                 </div>
               </div>
