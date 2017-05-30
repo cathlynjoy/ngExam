@@ -7,7 +7,8 @@
  * # MainCtrl
  * Controller of the ngmaterialApp
  */
-angular.module('ngmaterialApp').controller('MainCtrl', [
+angular.module('ngmaterialApp')
+.controller('MainCtrl', [
   '$scope',
   '$location',
   '$mdSidenav',
