@@ -27,15 +27,15 @@ angular.module('ngmaterialApp', [
     views: {
       'header': {
         templateUrl: 'views/partials/header.html',
-        controller: 'AppCtrl'
+        controller: 'MainCtrl'
       },
       'footer': {
         templateUrl: 'views/partials/footer.html',
-        controller: 'AppCtrl'
+        controller: 'MainCtrl'
       },
       'sidenav': {
         templateUrl: 'views/partials/sidenav.html',
-        controller: 'AppCtrl'
+        controller: 'MainCtrl'
       }
     }
   }).state('app.home', {
@@ -73,34 +73,4 @@ angular.module('ngmaterialApp', [
   });
 
   $urlRouterProvider.otherwise('/app/home');
-}).controller('AppCtrl', ['$scope', '$location', '$mdSidenav', '$mdToast', AppCtrl]);
-
-function AppCtrl($scope, $location, $mdSidenav, $mdToast) {
-  $scope.goHome = function() {
-    $location.path('/app/home');
-  };
-
-  $scope.goClerical = function() {
-    $location.path('/app/clerical');
-  };
-
-  $scope.goAptitude = function() {
-    $location.path('/app/aptitude');
-  };
-
-  $scope.goWriter = function() {
-    $location.path('/app/writer');
-  };
-
-  $scope.toggleSidenav = function() {
-    $mdSidenav('left').toggle();
-  };
-
-  $scope.toastMessage = 'Hello There!';
-
-  $scope.showToast = function(message) {
-    var toast = $mdToast.simple().content(message).action('Close').highlightAction(true).position('top right');
-
-    $mdToast.show(toast);
-  };
-}
+})
