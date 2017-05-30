@@ -7,38 +7,12 @@
       </md-button>
       <h2>Big Outsource Exam</h2>
       <span flex></span>
-      <md-button class="md-icon-button" aria-label="Favorite" ng-click="showToast(toastMessage)">
-        <ng-md-icon icon="favorite" style="fill:white"></ng-md-icon>
-      </md-button>
-      <md-button class="md-icon-button md-hue-1" aria-label="Info">
-        <ng-md-icon icon="info_outline" style="fill:white"></ng-md-icon>
-      </md-button>
+      <md-button class="md-raised md-accent" ng-click="goLogin()">Login</md-button>
+      <md-button class="md-raised md-accent" ng-click="goSignup()">Signup</md-button>
     </div>
   </md-toolbar>
-<!--
-TODO Create new partial html for sidenav
--->
 
-  <md-sidenav md-component-id="left" class="md-sidenav-left">
-    <md-list>
-      <md-list-item>
-        <md-button flex class="md-raised md-primary" ng-click="goHome()">Home</md-button>
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-list-item>
-        <md-button flex class="md-raised md-primary" ng-click="goClerical()">Clerical Exam</md-button>
-      </md-list-item>
-      <md-list-item>
-        <md-button flex class="md-raised md-primary" ng-click="goAptitude()">Aptitude Exam</md-button>
-      </md-list-item>
-
-      <md-list-item>
-        <md-button flex class="md-raised md-primary" ng-click="goWriter()">Writer Exam</md-button>
-      </md-list-item>
-        </md-list>
-  </md-sidenav>
   <md-content flex id="content" layout-padding>
-    <md-content layout-padding ui-view="menuContent">
-    </md-content>
+    <md-content layout-padding ui-view="menuContent"></md-content>
   </md-content>
 </md-content>
