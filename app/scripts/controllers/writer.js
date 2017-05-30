@@ -63,19 +63,19 @@ angular.module('ngmaterialApp')
   $scope.viewed = [
     {
       name: 'Jigno Alfred V. Venezuela',
-      headline: 'CEO of Misc Stuff at Imaginary Company',
+      headline: 'CO of Mojo Company',
       connection: '1st'
     }, {
       name: 'Rommel Lagurin',
-      headline: 'Bubbles of Powerpuff Girls',
+      headline: 'Bubbles of Powerpuff Girls Company',
       connection: '1st'
     }, {
       name: 'Hyacinth Briones',
-      headline: 'Blossom of Powerpuff Girls',
+      headline: 'Blossom of Powerpuff Girls Company',
       connection: '1st'
     }, {
       name: 'Monique Noche',
-      headline: 'Buttercup of Powerpuff Girls',
+      headline: 'Buttercup of Powerpuff Girls Company',
       connection: '1st'
     }
   ]
@@ -207,10 +207,10 @@ function AddExperienceCtrl($scope, $mdDialog) {
     };
   }
 
-  $scope.editEducation = function(ev, data) {
+  $scope.editEducation = function(ev, data, index) {
     $mdDialog.show({
       controller: EditEducationCtrl,
-      templateUrl: 'views/writer/edit-education.html',
+      templateUrl: 'views/writer/partials/edit-education.html',
       parent: angular.element(document.body),
       scope: $scope,
       preserveScope: true,
