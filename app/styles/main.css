@@ -1,3 +1,7 @@
+.headerTitle {
+  color: white;
+}
+
 md-sidenav ng-md-icon {
   position: relative;
   top: 5px;
@@ -126,4 +130,9 @@ ql-snow.ql-toolbar button:hover,
 
 .ql-editor.ql-blank::before {
   color: rgba(255,99,71,0.6);
+}
+
+.skillList {
+  padding-left: 15px;
+  padding-right: 15px;
 }
