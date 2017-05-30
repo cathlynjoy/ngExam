@@ -2,21 +2,22 @@
 <md-dialog>
 
 
-        <h2 id="ember10905-modal-label" class="visually-hidden">Edit form</h2>
-        <div id="ember10909" class="carousel-form ember-view">
-          <div id="ember10910" class="breadcrumb-carousel ember-view">
-            <div id="ember10911" class="carousel-header ember-view">
+        <h2 class="visually-hidden">Edit form</h2>
+        <div class="carousel-form ember-view">
+          <div class="breadcrumb-carousel ember-view">
+            <div class="carousel-header ember-view">
               <!---->
-              <div id="ember10912" class="carousel-header__item Sans-21px-black-85% carousel-header__item--show ember-view">
+              <div class="carousel-header__item Sans-21px-black-85% carousel-header__item--show ember-view">
                 <div id="carousel-header-item-main" class="carousel-header__item-content">
                   Edit education
                 </div>
               </div>
-              <div id="ember10913" class="carousel-header__item Sans-21px-black-85% carousel-header__item--hide ember-view">
+              <div class="carousel-header__item Sans-21px-black-85% carousel-header__item--hide ember-view">
                 <div id="carousel-header-item-edit-treasury" class="carousel-header__item-content">
                   Edit Media
                 </div>
               </div>
+
               <button type="button" data-control-name="cancel" class="form-back-action Sans-15px-black-55%" data-ember-action="" data-ember-action-10914="10914">
   <span class="svg-icon-wrap"><span class="visually-hidden">Cancel</span><li-icon aria-hidden="true" type="cancel-icon" ng-click="cancel()"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon"><g class="large-icon" style="fill: currentColor">
         <path d="M20,5.32L13.32,12,20,18.68,18.66,20,12,13.33,5.34,20,4,18.68,10.68,12,4,5.32,5.32,4,12,10.69,18.68,4Z"></path>
@@ -24,9 +25,9 @@
 </button>
 
             </div>
-            <div id="ember10915" class="carousel-body ember-view">
-              <div id="ember10916" class="carousel-item focused-easeInOut-motion carousel-item--show ember-view">
-                <div id="ember10917" class="pe-education-form form-edit ember-view">
+            <div  class="carousel-body ember-view">
+              <div class="carousel-item focused-easeInOut-motion carousel-item--show ember-view">
+                <div  class="pe-education-form form-edit ember-view">
                   <form class="pe-form " data-ember-action="" data-ember-action-10918="10918">
                     <div class="pe-s-form__container">
                       <header class="pe-s-form__header pe-form-header">
@@ -52,9 +53,8 @@
                           <!---->
                           <div class="pe-logo-container">
                             <img class="lazy-image pe-logo-container__img ghost-school loaded" alt="First Asia Institute of Technology and Humanities" height="24" width="24" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-
-                            <section id="ember10920" class="type-ahead-logo-field pe-form-field__type-ahead ember-view">
-                              <div id="ember10924" class="ember-view">
+                            <section  class="type-ahead-logo-field pe-form-field__type-ahead ember-view">
+                              <div  class="ember-view">
                                 <div class="type-ahead-wrapper type-ahead-theme-secondary pe-typeahead">
                                   <!---->
                                   <div role="search" class="type-ahead-input-container">
@@ -95,8 +95,8 @@
 
                         <!---->
                         <div class="pe-form-field edu-degree-name  ">
-                          <section id="ember10927" class="pe-form-field__type-ahead ember-view">
-                            <div id="ember10931" class="ember-view">
+                          <section  class="pe-form-field__type-ahead ember-view">
+                            <div class="ember-view">
                               <div class="type-ahead-wrapper type-ahead-theme-secondary pe-typeahead">
                                 <!---->
                                 <div role="search" class="type-ahead-input-container">
@@ -124,8 +124,8 @@
 
                         <!---->
                         <div class="pe-form-field edu-field-of-study  ">
-                          <section id="ember10933" class="pe-form-field__type-ahead ember-view">
-                            <div id="ember10937" class="ember-view">
+                          <section class="pe-form-field__type-ahead ember-view">
+                            <div class="ember-view">
                               <div class="type-ahead-wrapper type-ahead-theme-secondary pe-typeahead">
                                 <!---->
                                 <div role="search" class="type-ahead-input-container">
@@ -200,7 +200,7 @@
                               <label for="pe-education-form__start-year" class="pe-form-field__label">
         From Year
       </label>
-                              <span id="ember10942" class="ember-view">
+                              <span class="ember-view">
                                 <input ng-model="school.startdate" aria-autocomplete="list" type="date" class="ember-text-field ember-view">
 
 </span>
@@ -210,7 +210,7 @@
                               <label for="pe-education-form__end-year" class="pe-form-field__label">
         To Year (or expected)
       </label>
-                              <span id="ember11004" class="ember-view">
+                              <span  class="ember-view">
                                 <input ng-model="school.enddate" aria-autocomplete="list" type="date" class="ember-text-field ember-view">
 
 </span>
@@ -229,17 +229,34 @@
                           <textarea ng-model="school.description" name="description" id="edu-description" class="ember-text-area pe-form-field__textarea ember-view"></textarea>
 
 
+
                         </div>
+                            <!---->
+                            <div class="pe-treasury-view__supported-container">
+                              <a target="_blank" href="#" id="ember11069" class="pe-treasury-view__supported-link inline-block mb4 mt2 ember-view">
+                                <li-icon aria-hidden="true" type="question-pebble-icon" class="pe-treasury-view__supported-icon" size="small"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon"><g class="small-icon" style="fill-opacity: 1">
+        <g id="question-pebble-icon">
+          <g>
+            <path d="M7,10h2v2H7V10z M15,8c0,3.866-3.134,7-7,7s-7-3.134-7-7c0-3.866,3.134-7,7-7S15,4.134,15,8z M13.23,8c0-2.884-2.346-5.23-5.23-5.23S2.77,5.116,2.77,8c0,2.884,2.346,5.23,5.23,5.23S13.23,10.884,13.23,8z M8.5,4h-1C6.119,4,5,5.119,5,6.5V7h1.875V5.875h2.25v1.25H8c-0.552,0-1,0.448-1,1V9h1.5C9.875,9,11,7.875,11,6.5C11,5.119,9.881,4,8.5,4z"></path>
+            <rect style="fill:none;" width="16" height="16"></rect>
+          </g>
+        </g>
+        <g id="Layer_1">
+        </g>
+      </g></svg></li-icon>
+                                <span class="pe-treasury-view__supported-text Sans-13px-black-55% v-align-top">Supported formats</span>
+                              </a>
+                            </div>
+
 
 
                         <!-- <div id="ember11067" class="ember-view">
-
                         </div> -->
                       </div>
 
                       <footer class="pe-s-form__footer pe-form-footer">
-                        <div id="ember11070" class="form-osmosis left ember-view">
-                          <div id="ember11071" class="toggle-switch ember-view"><input data-control-name="toggle_share" tabindex="0" type="checkbox" id="osmosis-toggle-switch" class="ember-checkbox state-checkbox visually-hidden ember-view">
+                        <div class="form-osmosis left ember-view">
+                          <div  class="toggle-switch ember-view"><input data-control-name="toggle_share" tabindex="0" type="checkbox" id="osmosis-toggle-switch" class="ember-checkbox state-checkbox visually-hidden ember-view">
 
                             <label for="osmosis-toggle-switch">
 <!---->
@@ -273,11 +290,8 @@
                     </div>
                   </form>
                 </div>
+              </div>
 
-              </div>
-              <div id="ember11074" class="carousel-item focused-easeInOut-motion carousel-item--pop visibility-hidden ember-view">
-                <!---->
-              </div>
             </div>
           </div>
           <!---->
