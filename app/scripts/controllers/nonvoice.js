@@ -39,13 +39,13 @@ angular.module('ngmaterialApp')
 
   $scope.aptitude = [
     {
-      title: 'Numerical Aptitude',
+      title: 'Mixed Numerical Aptitude',
       url: 'http://aptitude-test.com/fla/freetest.swf',
       desc: 'Includes 15 numerical aptitude questions with topics from:',
       topics: [
         'Numerical Logic', 'Numerical Reasoning', 'Data Interpretation', 'Math Knowledge'
       ],
-      code: 'nonapti',
+      code: 'numapti',
       time: '20 Mins'
     }, {
       title: 'Mixed Non-Verbal Aptitude',
